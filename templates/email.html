@@ -1,0 +1,47 @@
+{% load i18n %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>{% trans "qSAT registration" %}</title>
+</head>
+
+<body>
+<p>
+   {% blocktrans %}
+        If this wasn't you, please ignore this email and your address will be removed from our records.<br><br><br>
+        <h2>qSAT 2016</h2>
+        Hi, {{ name }}<br>
+        Thank you for registering for qSAT.<br>
+    {% endblocktrans %}
+</p>
+<p>
+    {% blocktrans %}
+    This mail is to confirm your participation for qSAT at {{ city }}. Please pay at the link provided on the site.
+    {% endblocktrans %}
+</p>
+
+<p>
+<strong>
+    {% blocktrans %}
+    Instruction:- Please reply to this mail with the payment receipt. We will acknowledge the same from our side. The respective city representative will be in contact with you shortly thereafter.
+    {% endblocktrans %}
+</strong>
+</p>
+<p>
+{% blocktrans %}
+
+If you have any other issues regarding
+your registration, please contact administration at webadmin@bits-quark.org.<br><br><br>
+
+-Team qSAT, Quark 2017
+
+<br><br><br><br><br>
+CONFIDENTIALITY NOTICE:
+The contents of this email message and any attachments are intended solely for the addressee(s) and may contain confidential and/or privileged information and may be legally protected from disclosure. If you are not the intended recipient of this message or their agent, or if this message has been addressed to you in error, please immediately alert Quark Web Administrator at webadmin@bits-quark.org and then delete this message and any attachments. If you are not the intended recipient, you are hereby notified that any use, dissemination, copying, or storage of this message or its attachments is strictly prohibited.
+
+{% endblocktrans %}
+</p>
+</body>
+
+</html>
